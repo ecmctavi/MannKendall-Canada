@@ -1,0 +1,32 @@
+Useful Links
+
+R packages:
+https://docs.ropensci.org/tidyhydat/index.html - tidyhydat reference for retrieving Canadian hydrometric data
+
+https://docs.ropensci.org/weathercan/index.html - weathercan reference for retrieving Canadian climate data
+
+https://cran.r-project.org/web/packages/EcoHydRology/EcoHydRology.pdf - EcoHydRology reference, primarily used for the “BaseflowSeparation” function
+
+https://cran.r-project.org/web/packages/Kendall/Kendall.pdf - Kendall reference for applying the MannKendall test
+
+https://cran.r-project.org/web/packages/modifiedmk/modifiedmk.pdf - modifiedmk reference for applying the MannKendall test, includes multiple variations and prewhitening
+
+https://cran.r-project.org/web/packages/quantreg/quantreg.pdf - quantreg reference for quantile regression
+
+Climate data:
+https://weather.gc.ca/ - Weather homepage
+
+https://climate.weather.gc.ca/error/dbdown_e.html - Climate archive
+
+https://climatedata.ca/ - Climate data
+
+Hydrometric data:
+https://wateroffice.ec.gc.ca/index_e.html - Realtime and historical hydrometric data
+
+Well data:
+Note: Well data was the most difficult to come by, provincial websites such as the Ontario provincial site below had the most complete databases. More searching is required.
+
+https://data.ontario.ca/dataset/well-records -Ontario well data
+
+Errors/Warnings:
+“WARNING: Error exit, tauk2. IFAULT = 12” – My understanding of this warning/error is that it occurs for two reasons. One being if there is an insufficient amount of data (eg. n<=3) the MannKendall function will terminate the program. Two being if there is enough data but it determines that the p-values are inaccurate, this will not terminate the program and only give a warning. Further understanding is needed.
